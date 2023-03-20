@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Navigation from './components/Navigation'
+import background from './assets/background3.jpg'
+import Banner from './components/Banner'
 
 function App() {
 
@@ -8,8 +10,12 @@ function App() {
     <div className="App">
       {/* Navigation */}
       <Navigation />
+      
       {/* Banner */}
+      <Banner />
       {/* Top sale */}
+      
+      <div>asdasd</div>
       {/* Categories */}
       {/* Link to shop */}
       {/* New Items */}
