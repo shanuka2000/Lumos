@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navigation.css";
 import { BsMoonStarsFill, BsSearch, BsHeart, BsCart3 } from "react-icons/bs";
 import { IoMenu } from "react-icons/io5";
+import SideBar from "./SideBar";
 
 function Navigation() {
+
+  const [sideBarVisible, setSideBarVisible] = useState(false);
+
+  const handleSideBar = () => {
+    setSideBarVisible(!sideBarVisible)
+  }
+
   return (
     <div className="nav">
       {/* Top div */}
@@ -51,10 +59,11 @@ function Navigation() {
             <p>1 item</p>
           </div>
           <div className="ham">
-            <IoMenu className="hamSide" />
+            <IoMenu className="hamSide" onClick={handleSideBar}/>
           </div>
         </div>
       </div>
+      {sideBarVisible && <SideBar onClick={handleSideBar}/>}
     </div>
   );
 }

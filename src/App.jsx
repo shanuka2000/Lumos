@@ -14,8 +14,6 @@ function App() {
       {/* Banner */}
       <Banner />
       {/* Top sale */}
-      
-      <div>asdasd</div>
       {/* Categories */}
       {/* Link to shop */}
       {/* New Items */}
