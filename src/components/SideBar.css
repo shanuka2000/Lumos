@@ -52,3 +52,39 @@
 .auth a {
     border: none !important;
 }
+
+@media screen and (max-width: 576px) {
+    .side__container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .side__container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .side__container {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .side__container {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .side__container {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .side__container {
+        width: 15%;
+    }
+}
