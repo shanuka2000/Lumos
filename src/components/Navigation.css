@@ -1,4 +1,13 @@
+.nav {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation bar top part styles */
+
 .nav__top {
+  height: 12%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -19,7 +28,7 @@
 
 #hary {
   font-family: "Harry-potter";
-  font-size: 25px;
+  font-size: 30px;
   color: #a85;
 }
 
@@ -42,7 +51,104 @@
   font-family: "Reem Kufi Ink", sans-serif;
 }
 
+/* Navigation bar bottom part styles */
+
+.nav__bottom {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 10px;
+  background-color: #fcf5e7;
+  color: #4a2b10;
+}
+
+.nav__bottom__left,
+.nav__bottom__right {
+  width: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.nav__bottom__left a {
+  margin-right: 15px;
+  letter-spacing: 2px;
+  font-family: "Harry-potter";
+  text-transform: uppercase;
+  font-size: 20px;
+  text-decoration: none;
+  color: #4a2b108b;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.nav__bottom__left a:hover {
+  border-bottom: 2px solid #76767665;
+}
+
+.nav__bottom__mid a {
+  font-family: "Harry-potter";
+  font-size: 3em;
+  text-decoration: none;
+  color: #4a2b10;
+}
+
+.nav__bottom__mid {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search,
+.wish,
+.cart,
+.ham {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 22px;
+  color: #4a2b10a3;
+  transition: all 200ms ease;
+}
+
+.search:hover,
+.wish:hover,
+.cart:hover {
+  color: #4a2b10;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.search p,
+.wish p,
+.cart p {
+  margin-left: 10px;
+  font-family: "Harry-potter";
+}
+
+.hamSide {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsive css */
+
 @media screen and (max-width: 576px) {
+
+  .nav {
+    height: 15%;
+  }
+
+  .nav__bottom {
+    padding: 10px 15px;
+  }
+
   .nav__top {
     justify-content: space-between;
   }
@@ -69,9 +175,48 @@
   .nav__top__auth a {
     display: none;
   }
+
+  .hamSide {
+    display: initial;
+    font-size: 30px;
+  }
+
+  .nav__bottom__left {
+    display: none;
+  }
+
+  .nav__bottom__right p {
+    display: none;
+  }
+
+  .nav__bottom__right {
+    width: 30%;
+  }
+
+  .nav__bottom__right * {
+    margin-right: 10px;
+  }
+
+  .nav__bottom__mid {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .nav__bottom__mid a {
+    font-size: 2.5em;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+
+  .nav {
+    height: 15%;
+  }
+
+  .nav__bottom {
+    padding: 10px 15px;
+  }
+
   .nav__top {
     justify-content: space-between;
   }
@@ -97,4 +242,107 @@
   .nav__top__auth a {
     display: none;
   }
+
+  .hamSide {
+    display: initial;
+    font-size: 30px;
+  }
+
+  .nav__bottom__left {
+    display: none;
+  }
+
+  .nav__bottom__right p {
+    display: none;
+  }
+
+  .nav__bottom__right {
+    width: 30%;
+  }
+
+  .nav__bottom__right * {
+    margin-right: 10px;
+  }
+
+  .nav__bottom__mid {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .nav__bottom__mid a {
+    font-size: 2.5em;
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .nav {
+    height: 15%;
+  }
+
+  .nav__bottom {
+    padding: 10px 15px;
+  }
+
+  .hamSide {
+    display: initial !important;
+    font-size: 30px;
+  }
+
+  .nav__bottom__left {
+    display: none !important;
+  }
+
+  .nav__bottom__right p {
+    display: none;
+  }
+
+  .nav__bottom__right {
+    width: 30%;
+  }
+
+  .nav__bottom__right * {
+    margin-right: 10px;
+  }
+
+  .nav__bottom__mid {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .nav__bottom__mid a {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .hamSide {
+      display: initial !important;
+      font-size: 30px;
+    }
+  
+    .nav__bottom__left {
+      display: none !important;
+    }
+  
+    .nav__bottom__right p {
+      display: none;
+    }
+  
+    .nav__bottom__right {
+      width: 30%;
+    }
+  
+    .nav__bottom__right * {
+      margin-right: 10px;
+    }
+  
+    .nav__bottom__mid {
+      flex: 1;
+      justify-content: flex-start;
+    }
+  
+    .nav__bottom__mid a {
+      font-size: 2.5em;
+    }
+  }
