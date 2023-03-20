@@ -1,0 +1,100 @@
+.nav__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #4a2b10;
+  color: #fff;
+  border-bottom: 5px solid #a85;
+}
+
+.nav__top__mid {
+  display: flex;
+  align-items: center;
+}
+
+.nav__top__mid span {
+  margin: 0px 5px;
+}
+
+#hary {
+  font-family: "Harry-potter";
+  font-size: 25px;
+  color: #a85;
+}
+
+.nav__top__auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modeIcon {
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.nav__top__auth a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Reem Kufi Ink", sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+  .nav__top {
+    justify-content: space-between;
+  }
+
+  .nav__top__mid {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .nav__top__left {
+    display: none;
+  }
+
+  .nav__top__auth {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__top__auth a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .nav__top {
+    justify-content: space-between;
+  }
+
+  .nav__top__mid {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__top__left {
+    display: none;
+  }
+
+  .nav__top__auth {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav__top__auth a {
+    display: none;
+  }
+}
