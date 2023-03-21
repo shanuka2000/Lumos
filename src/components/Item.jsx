@@ -4,10 +4,9 @@ import './Item.css'
 function Item({ id, imgUrl, title, price }) {
   return (
     <div className="Item">
-      <p>{id}</p>
-      <p>{imgUrl}</p>
-      <p>{title}</p>
-      <p>{price}</p>
+      <img src={imgUrl} alt={title} />
+      <h2 className="Item__title">{title}</h2>
+      <p className="Item__price">{price}</p>
     </div>
   );
 }
