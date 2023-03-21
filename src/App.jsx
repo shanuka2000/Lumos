@@ -3,6 +3,7 @@ import './App.css'
 import Navigation from './components/Navigation'
 import background from './assets/background3.jpg'
 import Banner from './components/Banner'
+import TopSeller from './components/TopSeller'
 
 function App() {
 
@@ -13,7 +14,10 @@ function App() {
       
       {/* Banner */}
       <Banner />
+      
       {/* Top sale */}
+      <TopSeller />
+
       {/* Categories */}
       {/* Link to shop */}
       {/* New Items */}
