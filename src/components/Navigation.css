@@ -15,6 +15,7 @@
   background-color: #4a2b10;
   color: #fff;
   border-bottom: 5px solid #a85;
+  user-select: none;
 }
 
 .nav__top__mid {
@@ -49,6 +50,7 @@
   color: #fff;
   font-size: 18px;
   font-family: "Reem Kufi Ink", sans-serif;
+  user-select: none;
 }
 
 /* Navigation bar bottom part styles */
@@ -81,6 +83,7 @@
   color: #4a2b108b;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease;
+  user-select: none;
 }
 
 .nav__bottom__left a:hover {
@@ -92,6 +95,7 @@
   font-size: 3em;
   text-decoration: none;
   color: #4a2b10;
+  user-select: none;
 }
 
 .nav__bottom__mid {
@@ -112,6 +116,7 @@
   font-size: 22px;
   color: #4a2b10a3;
   transition: all 200ms ease;
+  user-select: none;
 }
 
 .search:hover,
