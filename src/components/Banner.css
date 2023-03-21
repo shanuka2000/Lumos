@@ -19,6 +19,7 @@
   margin-top: 10%;
   margin-right: 10%;
   font-size: 5em;
+  user-select: none;
 }
 
 .banner h1 span {
@@ -33,6 +34,7 @@
   margin-top: 0.5%;
   font-weight: 600;
   color: rgb(255, 255, 255);
+  user-select: none;
 }
 
 .magical-button {
@@ -52,6 +54,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  user-select: none;
 }
 
 .magical-button:before {
